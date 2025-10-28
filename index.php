@@ -23,11 +23,11 @@ $result = $conn->query($sql);
             echo "
         <div class='card'>
             <div class='image-placeholder'>
-                <img class='item-img' src='{$row ['img']}'>
+                <img class='item-img' src='{$row['img']}'>
             </div>
             <h3>{$row['title']}</h3>
             <p>{$row['descr']}</p>
-            <span class='price'>R{$row['price']}</span>
+            <span class='price'>R{$row['price']}</span><br>
              <button type='submit' class='add-btn'>Add to Cart</button>
         </div>
         ";
