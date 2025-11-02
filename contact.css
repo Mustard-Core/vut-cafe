@@ -1,1 +1,262 @@
 @import url(header_and_footer.css);
+
+
+
+
+/* --- Custom Styles for Contact Page Layout --- */
+
+/* Define CSS Variables for easy maintenance (must be repeated here if not in style.css) */
+:root {
+    --primary-red: #B51212; /* Full Red */
+    --pale-red: #FFEBEB; /* Light/Pale Red (used for background) */
+    --text-dark: #333333; /* Dark text/primary content color */
+    --text-light: #ffffff; /* White text for contrast */
+    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-deep: 0 10px 25px rgba(0, 0, 0, 0.2);
+    --border-radius: 8px;
+}
+
+/* Base Body Style */
+body {
+    background-color: var(--pale-red); /* Full background is pale red */
+    color: var(--text-dark);
+    font-family: 'Arial', sans-serif;
+}
+
+/* General Link and Button Styling */
+a {
+    color: var(--primary-red);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--text-dark);
+}
+
+/* --- TOP BANNER (CONTACT US) --- */
+.top-banner {
+    background-color: var(--primary-red);
+    color: var(--text-light);
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow-light);
+}
+
+.top-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.top-banner p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/* --- GET IN TOUCH & INFO PANELS (Section above the form) --- */
+.contact-details-section {
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row; 
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Left side: "GET IN TOUCH..." text */
+.get-in-touch-title {
+    flex-basis: 30%; 
+    padding-top: 10px;
+}
+
+.get-in-touch-title .accent-text {
+    font-weight: bold;
+    color: var(--primary-red);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.get-in-touch-title h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    border-bottom: 3px solid var(--primary-red);
+    padding-bottom: 10px;
+}
+
+/* Right side: 3 info cards grid */
+.info-panels-container {
+    flex-basis: 70%; 
+    display: grid;
+    /* Responsive grid: minimum card width 250px */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+}
+
+.info-card {
+    background-color: var(--primary-red); /* Full Red background */
+    color: var(--text-light);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow-light);
+}
+
+.info-card i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--text-light); 
+}
+
+.info-card a {
+    color: #ffdddd; /* Lighter red for links on red background */
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* --- QUERY FORM SECTION (The main two-column contact block) --- */
+.query-form-section {
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+    background-color: #ffffff; 
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-deep);
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+/* Left Panel: Red Intro */
+.form-intro-panel {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+    background-color: var(--primary-red); 
+    color: var(--text-light);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    order: 1; 
+}
+
+.form-intro-panel h2 {
+    font-size: 2.5rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.form-social-links a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: var(--text-light);
+}
+
+.form-social-links a:hover {
+    color: #ffdddd;
+}
+
+/* Right Panel: White Form */
+.query-form {
+    flex: 1.5; 
+    min-width: 400px;
+    padding: 40px;
+    order: 2; 
+}
+
+/* Form Element Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.query-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.query-form input[type="text"], 
+.query-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.query-form input:focus, 
+.query-form textarea:focus {
+    border-color: var(--primary-red);
+    outline: none;
+}
+
+/* Submit Button Styling */
+.cta-btn.submit-btn {
+    background-color: var(--primary-red);
+    color: var(--text-light);
+    border: none;
+    padding: 15px 30px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100%; /* Make button full width of its container */
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.cta-btn.submit-btn:hover {
+    background-color: #9c0e0e; 
+    transform: translateY(-2px);
+}
+
+
+/* --- Responsive Adjustments (Mobile Layouts) --- */
+@media (max-width: 1024px) {
+    /* Stack Info Title and Info Panels */
+    .contact-details-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .get-in-touch-title, .info-panels-container {
+        flex-basis: 100%;
+    }
+    .get-in-touch-title h2 {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .info-panels-container {
+        grid-template-columns: 1fr 1fr; /* Keep 2 columns if space allows */
+    }
+
+    /* Stack Form Intro and Form Fields */
+    .query-form-section {
+        flex-direction: column;
+        border-radius: var(--border-radius); 
+        margin: 0 20px 80px 20px; /* Add margin for mobile padding */
+    }
+
+    .form-intro-panel {
+        order: 1; /* Title panel on top */
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    .query-form {
+        order: 2; /* Form fields below */
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
+    }
+}
+
+@media (max-width: 600px) {
+    .top-banner h1 {
+        font-size: 2.5rem;
+    }
+    .info-panels-container {
+        grid-template-columns: 1fr; /* Single column stack for very small devices */
+    }
+    .form-intro-panel, .query-form {
+        min-width: auto;
+    }
+}
