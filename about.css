@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --primary-red: #cc0000;
     --pale-red: #ffcccc;
@@ -396,3 +397,6 @@ body {
     }
 }
 
+=======
+@import url(header_and_footer.css);
+>>>>>>> 52d978537202bde7b1c229dec724ee49f26b8928
