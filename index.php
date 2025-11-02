@@ -4,14 +4,11 @@ $sql = "SELECT img, title, descr, price FROM item";
 $result = $conn->query($sql);
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Menu Items</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -22,13 +19,13 @@ $result = $conn->query($sql);
         while ($row = $result->fetch_assoc()) {
             echo "
         <div class='card'>
-            <div class='image-placeholder'>
-                <img class='item-img' src='{$row['img']}'>
-            </div>
-            <h3>{$row['title']}</h3>
-            <p>{$row['descr']}</p>
-            <span class='price'>R{$row['price']}</span><br>
-             <button type='submit' class='add-btn'>Add to Cart</button>
+        <img class='item-img' src='{$row['img']}'>
+
+        <h class = 'title'>{$row['title']}</h>
+      
+        <p class = 'price'>R{$row['price']}.00</p>
+
+         <button type='submit' class='btn-add'>Add to Cart</button>
         </div>
         ";
         }
@@ -38,7 +35,6 @@ $result = $conn->query($sql);
 
     $conn->close();
     ?>
-
 </body>
 
 </html>
