@@ -1,9 +1,10 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+
 body {
     padding: 0px;
-    margin-inline: 3%;
+    padding-inline: 3%;
     border: 20px;
     height: 200px;
-    background-image: src="";
 }
 
 header{
@@ -43,12 +44,11 @@ header{
     font-size: 22px;
     transition: ease-in-out 0.1s;
 
-
 }
 
 /*END OF HEADER*/
 
-p {
+.footer-item{
     font-size: 18px;
     color: #c94c4c;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -71,7 +71,6 @@ footer {
     margin-inline: 30px;
 }
 
-
 .icon{width: 50px}
 
 .social-item{align-content: center;}
@@ -81,4 +80,5 @@ text-decoration: none;
 font-family: Arial, Helvetica, sans-serif;
 padding:1px;}
 
-.copywrite{padding: 25px;}
+
+.section-4{padding-bottom: 10px;}
