@@ -3,25 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VUT Cafeteria | Contact Us</title>
-    <!-- Links to both new contact.css for layout and style.css for shared elements -->
-    <link rel="stylesheet" href="contact.css" /> 
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Assuming style.css contains common styles, header, and footer structure -->
-    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" />
 </head>
 <body>
 
     <!-- REVISED GLOBAL HEADER - Assuming this structure from style.css -->
     <header>
-        <ul class="header-item-container"><a href="index.php"><img id="logo" src="media/logo.png" alt="VUT Logo"></a></ul>
+        <ul class="header-item-container"><a href="index.html"><img id="logo" src="media/logo.png" alt="VUT Logo"></a></ul>
     
         <ul class="header-item-container2">
-            <a class="link" href="index.php">Home</a>
+            <a class="link" href="index.html">Home</a>
             <a class="link" href="about.html">About</a>
-            <a class="link" href="menu.html">Menu</a>
+            <a class="link" href="menu.php">Menu</a>
             <a id="here" class="link" href="contact.html">Contact</a>
+             <a class="link" href="cart.php">Cart</a>
         </ul>
     </header>
 
@@ -64,7 +60,7 @@
                 <div class="info-card">
                     <i class="fas fa-headset"></i>
                     <h3>Contact Details</h3>
-                    <p>Email: vutcafe@Vut.ac.za</p>
+                    <p>Email: vutcafe@vut.ac.za</p>
                     <p>Phone: +27 67 993 3441</p>
                     <a href="mailto:vutcafe@Vut.ac.za">Send Email &rarr;</a>
                 </div>
@@ -141,49 +137,46 @@
 
     </main>
     
-    <!-- REVISED FOOTER - Assuming this structure from style.css -->
-    <footer>
-        <section class="section-1">
-            <p class = "footer-item">VAAL UNIVERSITY OF TECHNOLOGY CAFETERIA</p>
-        </section>
     
-        <section class="section-2">
-            <p class="footer-item">Address<br>
-                Andries Potgieter Boulevard<br>
-                Vanderbijlpark<br>
-                1911<br>
-                South Africa
-            </p>
-        </section>
-    
-        <section class="section-2">
-            <p class = "footer-item">CONTACT<br>
-                vutcafe@Vut.ac.za<br>
-                +27 67 993 3441</p>
-        </section>
-    
-        <section class="section-2">
-            <p class = 'footer-item'>Follow us on social media:</p>
-            <div class="icons">
-                <a href="#"><i class="fab fa-facebook-f"></i> VUT Cafeteria</a><br>
-                <a href="#"><i class="fab fa-instagram"></i> vut_cafeteria</a><br>
-                <a href="#"><i class="fab fa-twitter"></i> vut_cafeteria</a>
-            </div>
-        </section>
-    
-        <hr>
-    
-        <section class="section-4">
-            <p id = "copywrite" class = "footer-item">© 2025 Green Campus Initiative</p>
-        </section>
-    </footer>
 
-    <!-- BACK TO TOP BUTTON (Requires script.js) -->
-    <button id="backToTopBtn" title="Go to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
 
     <!-- Assuming script.js is used for the back-to-top button and other interactions -->
     <script src="script.js"></script>
 </body>
+
+<footer>
+    <section class="section-1">
+        <p class = "footer-item">VAAL UNIVERSITY OF TECHNOLOGY CAFETERIA</p>
+    </section>
+
+    <section class="section-2">
+        <p class="footer-item">Address<br>
+            Andries Potgieter Boulevard<br>
+            Vanderbijlpark<br>
+            1911<br>
+            South Africa
+        </p>
+    </section>
+
+    <section class="section-2">
+        <p class = "footer-item">CONTACT<br>
+            vutcafe@vut.ac.za<br>
+            +27 67 993 3441</p>
+    </section>
+
+    <section class="section-2">
+        <p class = 'footer-item'>Follow us on social media:</p>
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook-f"></i> VUT Cafeteria</a><br>
+            <a href="#"><i class="fab fa-instagram"></i> vut_cafeteria</a><br>
+            <a href="#"><i class="fab fa-twitter"></i> vut_cafeteria</a>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="section-4">
+        <p id = "copywrite" class = "footer-item">© 2025 VUT CAFE</p>
+    </section>
+</footer>
 </html>

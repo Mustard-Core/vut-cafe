@@ -6,13 +6,14 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Cart</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart.css">
+
 </head>
 <header>
-    <ul class="header-item-container"><a href="index.php"><img id="logo" src="media/logo.png"></a></ul>
+    <ul class="header-item-container"><a href="index.html"><img id="logo" src="media/logo.png"></a></ul>
 
     <ul class="header-item-container2">
-        <a class="link" href="index.php">Home</a>
+        <a class="link" href="index.html">Home</a>
         <a class="link" href="about.html">About</a>
         <a class="link" href="menu.php">Menu</a>
         <a class="link" href="contact.html">Contact</a>
@@ -27,7 +28,7 @@ session_start();
 <?php
 if (empty($_SESSION['cart'])) {
     echo "<p>Your cart is empty.</p>";
-    echo "<a href='index.php'>Back to Menu</a>";
+    echo "<a href='menu.php'>Back to Menu</a>";
 } else {
     $total = 0;
 
@@ -55,7 +56,7 @@ if (empty($_SESSION['cart'])) {
             <td>
                 <form action='remove_from_cart.php' method='POST'>
                     <input type='hidden' name='id' value='{$id}'>
-                    <button type='submit' class='btn-remove'>Remove</button>
+                    <button type='submit' class='btn-remove'>✖</button>
                 </form>
             </td>
         </tr>
@@ -70,11 +71,17 @@ if (empty($_SESSION['cart'])) {
         </tr>
     </table>
 
+    <div>
     <form action='clear_cart.php' method='POST'>
         <button type='submit' class='btn-clear'>Clear Cart</button>
-    </form>
+        <button class= 'btn-continue-shopping'><a class ='link-continue-shopping' href='menu.php'>Continue Shopping</a></button>
+    
+        </form>
 
-    <a href='index.php'>Continue Shopping</a>
+        <form action='checkout.php' method='POST'>
+    <button type='submit' class='btn-checkout'>Checkout</button>
+</form>
+    </div>  
     ";
 }
 ?>
@@ -96,7 +103,7 @@ if (empty($_SESSION['cart'])) {
 
     <section class="section-2">
         <p class = "footer-item">CONTACT<br>
-            vutcafe@Vut.ac.za<br>
+            vutcafe@vut.ac.za<br>
             +27 67 993 3441</p>
     </section>
 
@@ -112,7 +119,7 @@ if (empty($_SESSION['cart'])) {
     <hr>
 
     <section class="section-4">
-        <p id = "copywrite" class = "footer-item">© 2025 Green Campus Initiative</p>
+        <p id = "copywrite" class = "footer-item">© 2025 VUT CAFE</p>
     </section>
 </footer>
 </html>

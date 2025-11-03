@@ -18,12 +18,12 @@ $result = $conn->query($sql);
 
 </head>
 <header>
-    <ul class="header-item-container"><a href="index.php"><img id="logo" src="media/logo.png"></a></ul>
+    <ul class="header-item-container"><a href="index.html"><img id="logo" src="media/logo.png"></a></ul>
 
     <ul class="header-item-container2">
-        <a id="here" class="link" href="index.php">Home</a>
+        <a  class="link" href="index.html">Home</a>
         <a class="link" href="about.html">About</a>
-        <a class="link" href="menu.php">Menu</a>
+        <a id="here" class="link" href="menu.php">Menu</a>
         <a class="link" href="contact.html">Contact</a>
         <a class="link" href="cart.php">Cart</a>
     </ul>
@@ -70,7 +70,7 @@ $result = $conn->query($sql);
 
     <section class="section-2">
         <p class = "footer-item">CONTACT<br>
-            vutcafe@Vut.ac.za<br>
+            vutcafe@vut.ac.za<br>
             +27 67 993 3441</p>
     </section>
 
@@ -86,7 +86,7 @@ $result = $conn->query($sql);
     <hr>
 
     <section class="section-4">
-        <p id = "copywrite" class = "footer-item">© 2025 Green Campus Initiative</p>
+        <p id = "copywrite" class = "footer-item">© 2025 VUT CAFE</p>
     </section>
 </footer>
 
