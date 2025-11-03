@@ -74,9 +74,10 @@ if (empty($_SESSION['cart'])) {
     <div>
     <form action='clear_cart.php' method='POST'>
         <button type='submit' class='btn-clear'>Clear Cart</button>
-        <button class= 'btn-continue-shopping'><a class ='link-continue-shopping' href='menu.php'>Continue Shopping</a></button>
+   
     
         </form>
+<a class='btn-checkout' href='menu.php'>Continue Shopping</a>
 
         <form action='checkout.php' method='POST'>
     <button type='submit' class='btn-checkout'>Checkout</button>
